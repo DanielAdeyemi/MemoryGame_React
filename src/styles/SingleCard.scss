@@ -7,4 +7,14 @@
 		border: 2px solid #fff;
 		border-radius: 6px;
 	}
+
+	.front {
+		position: absolute;
+		transform: rotateY(90deg);
+	}
+
+	.flipped .front {
+		position: absolute;
+		transform: rotateY(0deg);
+	}
 }

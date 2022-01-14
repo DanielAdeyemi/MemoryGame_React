@@ -6,4 +6,12 @@
   display: block;
   border: 2px solid #fff;
   border-radius: 6px;
+}
+.card .front {
+  position: absolute;
+  transform: rotateY(90deg);
+}
+.card .flipped .front {
+  position: absolute;
+  transform: rotateY(0deg);
 }/*# sourceMappingURL=SingleCard.css.map */
