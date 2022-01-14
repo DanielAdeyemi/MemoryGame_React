@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import "./App.scss";
 
 const cardImg = [
 	{ src: "/img/helmet-1.png" },
