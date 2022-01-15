@@ -1,9 +1,9 @@
 import "../styles/SingleCard.scss";
 
-const SingleCard = ({ card, handleChoice, flipped }) => {
+const SingleCard = ({ card, handleChoice, flipped, disabled }) => {
 	console.log(card);
 	const handleClick = () => {
-		handleChoice(card);
+		if (!disabled) handleChoice(card);
 	};
 
 	return (

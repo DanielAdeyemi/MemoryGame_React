@@ -2,8 +2,7 @@
   max-width: 860px;
   margin: 40px auto;
 }
-
-button {
+.App button {
   background: none;
   border: 2px solid #fff;
   padding: 6px 12px;
@@ -13,15 +12,20 @@ button {
   cursor: pointer;
   font-size: 1em;
 }
-
-button:hover {
+.App button:hover {
   background: #c23866;
   color: #fff;
 }
-
-.card-grid {
+.App .card-grid {
   display: grid;
   margin-top: 40px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+.App .turns {
+  margin-top: 25px;
+  font-weight: bold;
+}
+.App .turns #num {
+  color: sandybrown;
 }/*# sourceMappingURL=App.css.map */

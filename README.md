@@ -1,3 +1,29 @@
+## <div align="center">Memory Game</div>
+
+#### <div align="center">📚 _Learning project for practicing React and SASS 01/11/2022_ </div>
+
+**_<p align="right">By Daniel Adeyemi_**</p>
+
+<p align="center">
+
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="30"/>
+<img alt="JavaScript" width="30px" src="https://raw.githubusercontent.com/DanielAdeyemi/devicon/master/icons/sass/sass-original.svg" />
+</p>
+
+<div><img src="https://cdn.shopify.com/s/files/1/0322/7017/products/SLM-225_B_2048x.jpg?v=1396120490" alt="Bakery image" width="50%" display="block" margin-left="auto" margin-right="auto"/></div>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+### <div align="center"> 🤔 Description:
+
+Memory Game application build with React and styled with SASS. User can flip 2 cards and try to find matching pairs. Application counts number of turns and if it's no match - cards will be flipped back.
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## <div align="center"> 🚥 Setup
+
+<details>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +94,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+</details>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## <div align="center"> 🛠️ _Technologies used:_
+
+- React v.17.0.2
+- SASS v.7.0.1
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## <div align="center"> 🌟 _Teaching points:_
+
+- useEffect hooks with different side effects, also usage of different dependencies and run the functions after state update
+- useState hooks to easy track and update states
+- passing props from one component to another and destracture them
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+## <div align="center"> 📬 Contact Information
+
+#### For any questions _[email author](mailto:adeyemidany+github@gmail.com?subject=[GitHub])_
+
+<a name="license"></a>
+
+## <div align="center"> 📘 _License and copyright:_
+
+> **_© Daniel Adeyemi, 2022_**  
+> ⚖️ _[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)_

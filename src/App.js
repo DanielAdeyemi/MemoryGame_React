@@ -16,6 +16,17 @@ function App() {
 	const [turns, setTurns] = useState(0);
 	const [choiceOne, setChoiceOne] = useState(null);
 	const [choiceTwo, setChoiceTwo] = useState(null);
+	const [disabled, setDisabled] = useState(false);
+
+	useEffect(() => {
+		shuffleCards();
+	}, []);
+
+	useEffect(() => {
+		if (turns > 11) {
+			// logic for pop-up message that all turns were used - you lost
+		}
+	}, [turns]);
 
 	useEffect(() => {
 		compare();
@@ -37,17 +48,19 @@ function App() {
 
 	const compare = () => {
 		if (choiceOne && choiceTwo) {
+			setDisabled(true);
 			if (choiceOne.src === choiceTwo.src) {
 				choiceOne.matched = true;
 				choiceTwo.matched = true;
 			}
-			resetTurn();
+			setTimeout(() => resetTurn(), 500);
 		}
 	};
 
 	const resetTurn = () => {
 		setChoiceOne(null);
 		setChoiceTwo(null);
+		setDisabled(false);
 		setTurns((prevTurn) => prevTurn + 1);
 	};
 
@@ -62,10 +75,13 @@ function App() {
 						card={card}
 						handleChoice={handleChoice}
 						flipped={card === choiceOne || card === choiceTwo || card.matched}
+						disabled={disabled}
 					/>
 				))}
 			</div>
-			<div># of turns: {turns}</div>
+			<div className="turns">
+				# of turns: <span id="num">{turns}</span>
+			</div>
 		</div>
 	);
 }

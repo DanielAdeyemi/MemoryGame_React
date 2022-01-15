@@ -11,10 +11,26 @@
 	.front {
 		position: absolute;
 		transform: rotateY(90deg);
+		transition: all ease-in 0.2s;
 	}
 
-	.flipped .front {
-		position: absolute;
-		transform: rotateY(0deg);
+	.flipped {
+		.front {
+			transition-delay: 0.2s;
+			transform: rotateY(0deg);
+		}
+		.back {
+			transition-delay: 0s;
+			transform: rotateY(90deg);
+		}
+	}
+
+	.back {
+		transition: all ease-out 0.2s;
+		transition-delay: 0.2s;
+	}
+
+	&:hover {
+		transform: scale(1.01, 1.01);
 	}
 }
