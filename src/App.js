@@ -13,7 +13,7 @@ const cardImg = [
 
 function App() {
 	const [cards, setCards] = useState([]);
-	const [turns, setTurns] = useState(0);
+	const [turns, setTurns] = useState(11);
 	const [choiceOne, setChoiceOne] = useState(null);
 	const [choiceTwo, setChoiceTwo] = useState(null);
 	const [disabled, setDisabled] = useState(false);
@@ -23,8 +23,9 @@ function App() {
 	}, []);
 
 	useEffect(() => {
-		if (turns > 11) {
-			// logic for pop-up message that all turns were used - you lost
+		if (turns <= 0) {
+			alert("too much!");
+			shuffleCards();
 		}
 	}, [turns]);
 
@@ -39,7 +40,7 @@ function App() {
 			.sort(() => Math.random() - 0.5) // sort and randomize an order (shuffle)
 			.map((card) => ({ ...card, id: Math.random() })); // assign an id to each card
 		setCards(shuffleCards);
-		setTurns(0);
+		setTurns(11);
 	};
 
 	const handleChoice = (card) => {
@@ -61,7 +62,7 @@ function App() {
 		setChoiceOne(null);
 		setChoiceTwo(null);
 		setDisabled(false);
-		setTurns((prevTurn) => prevTurn + 1);
+		setTurns((prevTurn) => prevTurn - 1);
 	};
 
 	return (
@@ -80,7 +81,7 @@ function App() {
 				))}
 			</div>
 			<div className="turns">
-				# of turns: <span id="num">{turns}</span>
+				# of trys left: <span id="num">{turns}</span>
 			</div>
 		</div>
 	);
