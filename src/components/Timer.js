@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Timer = ({ time }) => {
+const Timer = ({ time, reset }) => {
 	const [[mins, secs], setTime] = useState(time);
 	const showTimer =
 		mins >= 0
@@ -14,7 +14,7 @@ const Timer = ({ time }) => {
 
 	useEffect(() => {
 		const out = () => {
-			alert("Time is up!");
+			reset();
 		};
 		const timer = () => {
 			if (mins < 0 || (mins === 0 && secs === 0)) {
