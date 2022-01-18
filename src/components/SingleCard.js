@@ -1,7 +1,6 @@
 import "../styles/SingleCard.scss";
 
 const SingleCard = ({ card, handleChoice, flipped, disabled }) => {
-	console.log(card);
 	const handleClick = () => {
 		if (!disabled) handleChoice(card);
 	};

@@ -1,7 +1,9 @@
 .App {
   max-width: 860px;
   margin: 40px auto;
+  min-height: 200px;
 }
+
 .App button {
   background: none;
   border: 2px solid #fff;
@@ -12,20 +14,24 @@
   cursor: pointer;
   font-size: 1em;
 }
+
 .App button:hover {
   background: #c23866;
   color: #fff;
 }
+
 .App .card-grid {
   display: grid;
   margin-top: 40px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
+
 .App .turns {
   margin-top: 25px;
   font-weight: bold;
 }
+
 .App .turns #num {
   color: sandybrown;
-}/*# sourceMappingURL=App.css.map */
+}
